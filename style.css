@@ -122,9 +122,6 @@
         border-radius: 30px;
     }
     
-    main .my__works .photo {
-        height: 30%;
-    }
     
     main .my__works img:hover {
         transition: .2s;
