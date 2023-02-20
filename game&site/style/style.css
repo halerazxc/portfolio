@@ -1,0 +1,365 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.container-header {
+    max-width: 70%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+/* Шапка */
+
+header {
+    background: url(../img/fon-header.svg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding-top: 14px;
+}
+
+.header .logo-header {
+    display: flex;
+}
+
+.header .logo-header p {
+    margin-left: 10px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    margin: 0 30px;
+    color: #fff;
+}
+
+.header ul .last_li:last-of-type {
+    margin-right: 0;
+}
+
+.header a li {
+    position: relative;
+}
+
+.header a li::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.header a li:hover::before {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+
+/* Конец шапки */
+
+
+/* Первый блок */
+
+.header-block {
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 35%;
+}
+
+.header-block h1,
+h2,
+h3,
+h4 {
+    margin: 9px;
+    color: #fff;
+}
+
+.header-block h1 {
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-weight: 100;
+}
+
+.header-block h2 {
+    font-size: 32px;
+}
+
+.header-block h3 {
+    font-size: 22px;
+}
+
+.header-block h4 {
+    font-size: 21px;
+}
+
+
+/* Конец первого блока */
+
+
+/* main */
+
+.main {
+    padding-top: 110px;
+}
+
+.main .main-h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.main-blocks {
+    display: flex;
+}
+
+.main-blocks .main-block_2 {
+    padding-left: 75px;
+}
+
+.main-blocks img {
+    width: 100%;
+}
+
+.main-blocks .main_h4 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    margin-left: 0;
+    color: #000000;
+    font-weight: 500;
+}
+
+.main-blocks .main-block_2 p {
+    font-size: 15px;
+    color: #686B55;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+
+.main-blocks .main_h4:nth-child(5),
+.main-blocks .main_h4:nth-child(8) {
+    margin-top: 40px;
+}
+
+
+/* Конец main */
+
+
+/* main 2 блок */
+
+.main-2 {
+    background: url(../img/fon-main.svg) no-repeat;
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 110px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-2 .container {
+    width: 1419px;
+}
+
+.main-2 p {
+    font-size: 46px;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 59.1px;
+}
+
+.main-2 .button {
+    border: 3px solid#fff;
+    border-radius: 44px;
+    width: 286px;
+    height: 75px;
+    color: #fff;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-2 .button:hover {
+    transform: scale(1.08);
+}
+
+.main-2 .main-2_block {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* Конец main 2 блок */
+
+
+/* main 3 блок */
+
+.main-3 .main-3_blocks {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.main-3_block h1 {
+    color: #262626;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.main-3_block h4 {
+    color: #262626;
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 18px;
+}
+
+.main-3_block p {
+    color: #686B55;
+    font-size: 16px;
+    margin-bottom: 26px;
+    line-height: 24px;
+}
+
+
+/* main 3 блок */
+
+
+/* main 4 блок */
+
+.main-4 {
+    background: url(../img/fon-footer.svg) no-repeat;
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 110px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-4 .container {
+    width: 1419px;
+}
+
+.main-4 p {
+    font-size: 46px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.main-4 .button_main4 {
+    border: 3px solid#B7C65D;
+    border-radius: 44px;
+    background: #B7C65D;
+    width: 243px;
+    height: 70px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-4 .button_main4_2 {
+    border: 3px solid#ffffff;
+    border-radius: 44px;
+    width: 195px;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-4 .button_main4:hover {
+    background: #ffffff;
+    color: #B7C65D;
+    border: 3px solid #B7C65D;
+}
+
+.main-4 .button_main4_2:hover {
+    background: #B7C65D;
+    color: #fff;
+    border: 3px solid#B7C65D;
+}
+
+.buttons-main4 {
+    display: flex;
+}
+
+
+/* main 4 блок */
+
+
+/* footer */
+
+footer {
+    padding-top: 45px;
+    padding-bottom: 85px;
+}
+
+.footer__container {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_footer {
+    width: 30%;
+}
+
+.logo_footer p {
+    font-size: 23px;
+    color: #262626;
+}
+
+.logo_foot {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.logo_foot p {
+    margin-left: 5px;
+}
+
+.first__nav ul li {
+    margin-bottom: 22px;
+    transition: .5s;
+}
+
+.first__nav ul li:hover {
+    color: #686B55;
+}
